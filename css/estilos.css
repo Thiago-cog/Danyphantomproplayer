@@ -1,11 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
-    background-image:url('http://www.cartoonbucket.com/wp-content/uploads/2015/11/Danny-Phantom-Photo-gq130.jpg');
+    background-image:url('../img/ebf33962d0182d57ccb8cbf5da1e01fdf391e5b9.jpg');
     background-size: auto 100vh;
     font-family: Arial;
     height: 100vh;
+     font-size: 13px;
+  }
+
+  @media(min-width: 400px){
+    body{
+      font-size: 18px;
+    }
+  }
+  header{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .menu{
-    
+    background-color: dimgray;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
   }
   a {
     color:white;
@@ -21,13 +43,22 @@ body{
     display:flex;
     justify-content:space-around;
   }
+  .menu a{
+    background-color:none;
+    display: block;
+    padding: 10px 30px;
+  }
   .site-title{
-    color:whitesmoke;
+    color:grey;
     text-align:center; 
   }
   .site-subtitle{
-    color:#00ff00;
+    color:#777777;
     font-style:italic;
     text-align:center;
   }
   
+  .img-portfolio{
+    height: 300px;
+    width: 500px;
+  }
